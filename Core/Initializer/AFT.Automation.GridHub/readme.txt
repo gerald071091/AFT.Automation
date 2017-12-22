@@ -1,0 +1,1 @@
+﻿This is the selenium hub server initializer and solely used for local test

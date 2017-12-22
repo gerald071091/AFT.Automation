@@ -1,0 +1,1 @@
+﻿This is the selenium node session initializer and solely used for local test

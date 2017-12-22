@@ -1,0 +1,32 @@
+{
+  "capabilities": [
+	{
+      "browserName": "firefox",
+	  "seleniumProtocol": "WebDriver",
+      "acceptSslCerts": true,
+      "javascriptEnabled": true,
+      "takesScreenshot": false,
+      "firefox_profile": "",
+      "platform": "WINDOWS",
+      "maxInstances": 10,
+      "firefox_binary": "",
+      "cleanSession": true,
+	  "marionette": true,
+	  "webdriver_accept_untrusted_certs": true,
+	  "webdriver_assume_untrusted_issuer": true
+   }
+  ],
+  "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+  "maxSession": 5,
+  "register": true,
+  "registerCycle": 5000,
+  "nodeStatusCheckTimeout": 5000,
+  "nodePolling": 10000,
+  "role": "node",
+  "unregisterIfStillDownAfter": 180000,
+  "downPollingLimit": 2,
+  "debug": true,
+  "servlets" : [],
+  "withoutServlets": [],
+  "custom": {}
+}

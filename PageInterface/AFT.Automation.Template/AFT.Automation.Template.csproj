@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B859782E-62ED-4870-B890-BD43A99FB91C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AFT.Automation.Template</RootNamespace>
+    <AssemblyName>AFT.Automation.Template</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Selenium.WebDriver.3.0.0\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Selenium.Support.3.0.0\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\Template1\Attributes.BonusHistory.cs" />
+    <Compile Include="Context\Template1\Attributes.Casino.cs" />
+    <Compile Include="Context\Template1\Attributes.ChangePassword.cs" />
+    <Compile Include="Context\Template1\Attributes.cs" />
+    <Compile Include="Context\Template1\Attributes.Deposit.cs" />
+    <Compile Include="Context\Template1\Attributes.DepositWithBonus.cs" />
+    <Compile Include="Context\Template1\Attributes.FooterLinks.cs" />
+    <Compile Include="Context\Template1\Attributes.ForgotPassword.cs" />
+    <Compile Include="Context\Template1\Attributes.GameHistory.cs" />
+    <Compile Include="Context\Template1\Attributes.HeaderLinks.cs" />
+    <Compile Include="Context\Template1\Attributes.Login.cs" />
+    <Compile Include="Context\Template1\Attributes.MyBonuses.cs" />
+    <Compile Include="Context\Template1\Attributes.MyDetails.cs" />
+    <Compile Include="Context\Template1\Attributes.MyWallet.cs" />
+    <Compile Include="Context\Template1\Attributes.QuickDeposit.cs" />
+    <Compile Include="Context\Template1\Attributes.Registration.cs" />
+    <Compile Include="Context\Template1\Attributes.ResponsibleGaming.cs" />
+    <Compile Include="Context\Template1\Attributes.Sportsbook.cs" />
+    <Compile Include="Context\Template1\Attributes.TransactionHistory.cs" />
+    <Compile Include="Context\Template1\Attributes.Withdraw.cs" />
+    <Compile Include="Context\Template2\Attributes.BonusHistory.cs" />
+    <Compile Include="Context\Template2\Attributes.Casino.cs" />
+    <Compile Include="Context\Template2\Attributes.ChangePassword.cs" />
+    <Compile Include="Context\Template2\Attributes.cs" />
+    <Compile Include="Context\Template2\Attributes.Deposit.cs" />
+    <Compile Include="Context\Template2\Attributes.DepositWithBonus.cs" />
+    <Compile Include="Context\Template2\Attributes.FooterLinks.cs" />
+    <Compile Include="Context\Template2\Attributes.ForgotPassword.cs" />
+    <Compile Include="Context\Template2\Attributes.GameHistory.cs" />
+    <Compile Include="Context\Template2\Attributes.HeaderLinks.cs" />
+    <Compile Include="Context\Template2\Attributes.Login.cs" />
+    <Compile Include="Context\Template2\Attributes.MyBonuses.cs" />
+    <Compile Include="Context\Template2\Attributes.MyDetails.cs" />
+    <Compile Include="Context\Template2\Attributes.MyWallet.cs" />
+    <Compile Include="Context\Template2\Attributes.QuickDeposit.cs" />
+    <Compile Include="Context\Template2\Attributes.Registration.cs" />
+    <Compile Include="Context\Template2\Attributes.ResponsibleGaming.cs" />
+    <Compile Include="Context\Template2\Attributes.Sportsbook.cs" />
+    <Compile Include="Context\Template2\Attributes.TransactionHistory.cs" />
+    <Compile Include="Context\Template2\Attributes.Withdraw.cs" />
+    <Compile Include="Model\Template1\Elements.BonusHistory.cs" />
+    <Compile Include="Model\Template1\Elements.Casino.cs" />
+    <Compile Include="Model\Template1\Elements.ChangePassword.cs" />
+    <Compile Include="Model\Template1\Elements.cs" />
+    <Compile Include="Model\Template1\Elements.Deposit.cs" />
+    <Compile Include="Model\Template1\Elements.DepositWithBonus.cs" />
+    <Compile Include="Model\Template1\Elements.FooterLinks.cs" />
+    <Compile Include="Model\Template1\Elements.ForgotPassword.cs" />
+    <Compile Include="Model\Template1\Elements.GameHistory.cs" />
+    <Compile Include="Model\Template1\Elements.HeaderLinks.cs" />
+    <Compile Include="Model\Template1\Elements.Login.cs" />
+    <Compile Include="Model\Template1\Elements.MyBonuses.cs" />
+    <Compile Include="Model\Template1\Elements.MyDetails.cs" />
+    <Compile Include="Model\Template1\Elements.MyWallet.cs" />
+    <Compile Include="Model\Template1\Elements.QuickDeposit.cs" />
+    <Compile Include="Model\Template1\Elements.Registration.cs" />
+    <Compile Include="Model\Template1\Elements.ResponsibleGaming.cs" />
+    <Compile Include="Model\Template1\Elements.Sportsbook.cs" />
+    <Compile Include="Model\Template1\Elements.TransactionHistory.cs" />
+    <Compile Include="Model\Template1\Elements.Withdraw.cs" />
+    <Compile Include="Model\Template2\Elements.BonusHistory.cs" />
+    <Compile Include="Model\Template2\Elements.Casino.cs" />
+    <Compile Include="Model\Template2\Elements.ChangePassword.cs" />
+    <Compile Include="Model\Template2\Elements.cs" />
+    <Compile Include="Model\Template2\Elements.Deposit.cs" />
+    <Compile Include="Model\Template2\Elements.DepositWithBonus.cs" />
+    <Compile Include="Model\Template2\Elements.FooterLinks.cs" />
+    <Compile Include="Model\Template2\Elements.ForgotPassword.cs" />
+    <Compile Include="Model\Template2\Elements.GameHistory.cs" />
+    <Compile Include="Model\Template2\Elements.HeaderLinks.cs" />
+    <Compile Include="Model\Template2\Elements.Login.cs" />
+    <Compile Include="Model\Template2\Elements.MyBonuses.cs" />
+    <Compile Include="Model\Template2\Elements.MyDetails.cs" />
+    <Compile Include="Model\Template2\Elements.MyWallet.cs" />
+    <Compile Include="Model\Template2\Elements.QuickDeposit.cs" />
+    <Compile Include="Model\Template2\Elements.Registration.cs" />
+    <Compile Include="Model\Template2\Elements.ResponsibleGaming.cs" />
+    <Compile Include="Model\Template2\Elements.Sportsbook.cs" />
+    <Compile Include="Model\Template2\Elements.TransactionHistory.cs" />
+    <Compile Include="Model\Template2\Elements.Withdraw.cs" />
+    <Compile Include="Operation\UKT\Operation.cs" />
+    <Compile Include="Operation\UKT\Operation.BonusHistory.cs" />
+    <Compile Include="Operation\UKT\Operation.Casino.cs" />
+    <Compile Include="Operation\UKT\Operation.ChangePassword.cs" />
+    <Compile Include="Operation\UKT\Operation.Deposit.cs" />
+    <Compile Include="Operation\UKT\Operation.DepositWithBonus.cs" />
+    <Compile Include="Operation\UKT\Operation.FooterLinks.cs" />
+    <Compile Include="Operation\UKT\Operation.ForgotPassword.cs" />
+    <Compile Include="Operation\UKT\Operation.GameHistory.cs" />
+    <Compile Include="Operation\UKT\Operation.HeaderLinks.cs" />
+    <Compile Include="Operation\UKT\Operation.Login.cs" />
+    <Compile Include="Operation\UKT\Operation.MyBonuses.cs" />
+    <Compile Include="Operation\UKT\Operation.MyDetails.cs" />
+    <Compile Include="Operation\UKT\Operation.MyWallet.cs" />
+    <Compile Include="Operation\UKT\Operation.QuickDeposit.cs" />
+    <Compile Include="Operation\UKT\Operation.Registration.cs" />
+    <Compile Include="Operation\UKT\Operation.ResponsibleGaming.cs" />
+    <Compile Include="Operation\UKT\Operation.Sportsbook.cs" />
+    <Compile Include="Operation\UKT\Operation.TransactionHistory.cs" />
+    <Compile Include="Operation\UKT\Operation.Withdraw.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\AFT.Automation.Domain\AFT.Automation.Domain.csproj">
+      <Project>{69e806fe-df2d-4ef6-872b-13403d6e5b2c}</Project>
+      <Name>AFT.Automation.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
